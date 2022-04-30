@@ -10,14 +10,14 @@ class MockProductsTest extends TestCase
         $mockRepo = $this->createMock(\App\ProductRepository::class);
 
         $mockProductsArray = [
-            ['id' => 1, 'name' => 'Acme Radio Knobs'],
-            ['id' => 2, 'name' => 'Apple iPhone'],
+            ['id' => 1, 'name' => 'fellin'],
+            ['id' => 2, 'name' => 'cevac'],
         ];
 
         $mockRepo->method('fetchProducts')->willReturn($mockProductsArray);
 
         $products = $mockRepo->fetchProducts();
 
-        $this->assertEquals('Acme Radio Knobs', $products[0]['name']);
+        $this->assertEquals('fellin', $products[0]['name']);
     }
 }
