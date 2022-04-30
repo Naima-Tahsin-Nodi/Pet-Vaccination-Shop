@@ -1,3 +1,5 @@
 <?php
-    $query = "SELECT * FROM payment_system ORDER BY id ASC ";
+    class payment extends Model {
+        $query = "SELECT * FROM payment_system ORDER BY id ASC ";
+    }
 ?>

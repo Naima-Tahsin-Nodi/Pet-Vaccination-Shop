@@ -1,3 +1,5 @@
 <?php
-    $query = "SELECT * FROM product ORDER BY id ASC ";
+    class cartdog extends Model {
+        $query = "SELECT * FROM product ORDER BY id ASC ";
+    }
 ?>

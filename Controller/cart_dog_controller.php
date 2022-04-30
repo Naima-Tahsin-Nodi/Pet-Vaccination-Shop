@@ -1,4 +1,5 @@
 <?php
+class cartdog extends Model {
     session_start();
     $database_name = "PetVet";
     $con = mysqli_connect("localhost","root","",$database_name);
@@ -73,3 +74,4 @@
                 <th align="right">$ <?php echo number_format($total, 2); ?></th>
                 <td></td>
             </tr>
+    }

@@ -1,4 +1,5 @@
 <?php
+class cartcat extends Model {
     session_start();
     $database_name = "PetVet";
     $con = mysqli_connect("localhost","root","",$database_name);
@@ -72,4 +73,4 @@ if(mysqli_num_rows($result) > 0) {
                 <th align="right">$ <?php echo number_format($total, 2); ?></th>
                 <td></td>
             </tr>
-            
+    }
